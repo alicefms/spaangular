@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Funcionarios SPA </title>
+</head>
+
+<body class="back">
+
+<mat-toolbar>
+    <span class="content-box">Junte-se ao nosso time!!!</span>
+  </mat-toolbar>
+
+  
+
+<div class="example-button-row">
+    <button mat-raised-button color="primary" [routerLink] = "['/cadastro']">Novo Cadastro</button>
+</div>
+<div class="example-button-row">
+    <button (click) ="exibirtabela()" mat-raised-button color="accent">Listar Funcionários Cadastrados</button>
+    <button (click) ="escondertabela()" mat-raised-button color="accent">Esconder Lista de Funcionários </button>
+</div>
+
+
+
+
+
+      <spa-listafuncionarios  *ngIf = "exibir" ></spa-listafuncionarios>
+
+   
+
+</body>

@@ -1,0 +1,12 @@
+
+<h1>Lista de Funcionários Cadastrados</h1>
+    <table  class="table">
+      
+        <tr *ngFor= "let pessoa of ListaFuncionarios">
+          <td> <img class="circular"  [src]= "pessoa.urlFoto"></td>
+          <td><b>{{pessoa.nome}} </b> <br>{{pessoa.email}} <br> {{pessoa.contato2}} <br> {{pessoa.celular}} </td>
+          <td>  <button mat-raised-button color="primary">Editar</button> 
+                 <button mat-raised-button color="warn">Excluir</button> </td>        
+        </tr>
+       
+      </table>

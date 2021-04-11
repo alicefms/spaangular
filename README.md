@@ -1,27 +1,34 @@
-# Spaangular
+# spaangular
+SPA criada em Angular 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+Single Page Aplication que abre o componente home, onde exibe um botão de 'Novo cadastro', 
+um de 'Listar funcionarios cadastrados' e outro de 'Esconder lista de funcionarios'.
 
-## Development server
+O botão de 'Novo cadastro' redireciona por um routerLink para o componente Formulario
+onde há um formulário(formField) de criação de novo cadastro e um botao de 'Voltar', que redireciona a rota para a home.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Os botões 'Listar funcionarios cadastrados' e 'Esconder lista de funcionarios' alteram o parametro da variável 'exibe'
+para true e false respectivamente, que, atraves de um NgIf exibem ou não o componente ListaFuncionarios.
 
-## Code scaffolding
+No componente ListaFuncionarios, é feita uma iteração no array de pessoas (ListaFuncionários) por um NgFor, para exibir 
+a lista dos funcionários com seus contatos e com a foto arrendondada. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*Componentes criados:*
+home
+listafuncionarios
+formulário
 
-## Build
+*imports do Angular Material*
+toolbar
+botões
+formField
+input
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+*interpolação e property binding*
+na iteração para exibir a lista de funcionarios, 
+as propriedadades: Nome, email, contato2 e celular são interpoladas.
+A propriedade urlFoto é property binding.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*diretivas NgIF e NgFor*
+NgIf, para exibir ou não a tabela.
+NgFor para iteração com um let of.

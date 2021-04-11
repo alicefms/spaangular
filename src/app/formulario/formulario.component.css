@@ -1,0 +1,29 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-form-field {
+    width: 200px;
+  }
+
+  .flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-box {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 400px;}
+
+    .center-toolbar {
+      text-align: center;
+    }
